@@ -1,28 +1,12 @@
-program NilaiAkhirMahasiswa;
-
+program Soal3;
 var
-nama: string;
-nilaiTugas, nilaiUTS, nilaiUAS: real;
-tugas, uts, uas, nilaiAkhir: real;
+a,b, hasil: integer;
 
 begin
-writeln('=== MENGHITUNG NILAI AKHIR MAHASISWA ===');
-write('Masukkan nama mahasiswa: ');
-readln(nama);
-write('Masukkan nilai tugas: ');
-readln(nilaiTugas);
-write('Masukkan nilai UTS: ');
-readln(nilaiUTS);
-write('Masukkan nilai UAS: ');
-readln(nilaiUAS);
-
-tugas := nilaiTugas * 30 / 100;
-uts := nilaiUTS * 30 / 100;
-uas := nilaiUAS * 40 / 100;
-nilaiAkhir := tugas + uts + uas;
-
-writeln;
-writeln('Nama Mahasiswa: ', nama);
-writeln('Nilai Akhir: ', nilaiAkhir:0:2);
-
+    write('Masukkan bilangan pertama: ');
+    readln(a);
+    write('Masukkan bilangan kedua: ');
+    readln(b);
+    hasil := a + b;
+    writeln('Hasil penjumlahan: ', hasil);
 end.
