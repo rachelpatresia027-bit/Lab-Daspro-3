@@ -1,14 +1,21 @@
-program pola;
+program SisaUangMahasiswa;
+
 var
-i,j:integer; 
+nama: string;
+uangAwal, hargaMakanan, hargaMinuman: real;
+totalPengeluaran,sisaUang: real;
+
 begin
-    for i:=5 downto 1 do 
-    begin
-        for j:= 1 to i do 
-        begin
-            write('*');
-        end;
-        writeln;
-    end;
-    readln;
+    writeln('=== MENGHITUNG SISA UANG MAHASISWA ===');
+    write('Masukkan nama mahasiswa: ');
+    readln(nama);
+    write('Masukkan uang awal: ');
+    readln(uangAwal);
+    write('Masukkan harga makanan: ');
+    readln(hargaMakanan);
+    write('Masukkan harga minuman: ');
+    readln(hargaMinuman);
+    totalPengeluaran := hargaMakanan + hargaMinuman;
+    sisaUang:= uangAwal - totalPengeluaran;
+    writeln('Sisa uang ', nama, ' adalah: ', sisaUang:0:2);
 end.
